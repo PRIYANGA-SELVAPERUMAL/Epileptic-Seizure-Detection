@@ -27,7 +27,7 @@ Epileptic seizures are bursts of abnormal electrical brain activity. Manual diag
 
 ## 📊 Dataset
 
-We used the Epileptic Seizure Recognition Dataset from UCI Machine Learning Repository:
+ The research utilized the Epileptic Seizure Recognition Dataset from Kaggle:
 
 * 11,500 samples
 * Each sample has 178 EEG signal points
@@ -36,7 +36,7 @@ We used the Epileptic Seizure Recognition Dataset from UCI Machine Learning Repo
   * 1 → Seizure
   * 2–5 → Non-seizure
 
-🔗 [Dataset Link](https://archive.ics.uci.edu/ml/datasets/Epileptic+Seizure+Recognition)
+🔗 [Dataset Link](https://www.kaggle.com/datasets/harunshimanto/epileptic-seizure-recognition)
 
 ---
 
