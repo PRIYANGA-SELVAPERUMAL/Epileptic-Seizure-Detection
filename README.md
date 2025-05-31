@@ -1,6 +1,3 @@
-# Epileptic-Seizure-Detection
-This project implements a hybrid deep learning model to detect epileptic seizures from EEG signals. It includes data preprocessing, feature extraction, and classification to provide early and accurate seizure prediction.
-
 # 🧠 Epileptic Seizure Detection using Hybrid CNN–BiLSTM Model
 
 An end-to-end deep learning project that leverages a hybrid CNN–BiLSTM architecture to predict epileptic seizures using EEG signals. The system integrates robust signal processing, model training, and a web application for real-time detection — all built from scratch.
@@ -81,7 +78,7 @@ Design a hybrid deep learning model that accurately detects epileptic seizures f
 * Fully Connected Layer: Dense interpretation
 * Output Layer: Softmax for binary classification
 
-✅ Final Accuracy: \~96%
+✅ Final Accuracy: 98.61%
 📉 Validation Loss: Stable convergence after tuning
 
 ---
@@ -154,12 +151,12 @@ The project includes a web-based front end built using HTML/CSS and Flask. Users
 
 | Metric    | Score |
 | --------- | ----- |
-| Accuracy  | \~96% |
-| Precision | 0.95  |
-| Recall    | 0.96  |
-| F1-Score  | 0.955 |
+| Accuracy  | 98.61% |
+| Precision | 0.98  |
+| Recall    | 0.98 |
+| F1-Score  | 0.98 |
 
-Confusion matrix, Classification report, and learning curves are available in the repo under the results folder.
+Confusion matrix, Classification report, and learning curves are available in the repo under the results section.
 
 ## 🔭 Future Enhancements
 
