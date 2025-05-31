@@ -16,7 +16,6 @@ An end-to-end deep learning project that leverages a hybrid CNN–BiLSTM archite
 * [How to Run the Project](#how-to-run-the-project)
 * [Results](#results)
 * [Future Work](#future-work)
-* [Contributors](#contributors)
 
 ---
 
