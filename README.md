@@ -106,7 +106,9 @@ The project includes a web-based front end built using HTML/CSS and Flask. Users
 | Front-End     | HTML, CSS, JavaScript     |
 | Back-End      | Python, Flask             |
 | Deep Learning | TensorFlow/Keras          |
-| Data Science  | NumPy, Pandas, Matplotlib |
+| Data Handling | Pandas, NumPy             |
+| Visualization | Matplotlib, Seaborn       |
+| Deployment    | Localhost                 |
 
 ---
 
@@ -115,7 +117,7 @@ The project includes a web-based front end built using HTML/CSS and Flask. Users
 1. Clone the repo:
 
    ```
-   git clone https://github.com/yourusername/epileptic-seizure-detection.git
+   git clone https://github.com/PRIYANGA-SELVAPERUMAL/epileptic-seizure-detection.git
    cd epileptic-seizure-detection
    ```
 
