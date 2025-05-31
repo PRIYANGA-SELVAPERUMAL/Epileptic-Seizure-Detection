@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🧠 Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <style>
+    /* Background container for particles and base background */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      overflow-x: hidden;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 5vh;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+
+    .result-card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem 3rem;
+      border-radius: 15px;
+      max-width: 520px;
+      margin: 2rem auto;
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      z-index: 1;
+      text-align: center;
+    }
+
+    .result-title {
+      font-size: 2.4rem;
+      color: #e94560;
+      margin-bottom: 1.3rem;
+      font-weight: 700;
+    }
+
+    .result-detail {
+      font-size: 1.2rem;
+      margin: 12px 0;
+    }
+
+    /* Button container - side by side */
+    .btn-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn-predict, .btn-download {
+      background-color: #0f3460;
+      padding: 0.65rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 8px rgba(15, 52, 96, 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .btn-predict:hover, .btn-download:hover {
+      background-color: #16213e;
+      transform: scale(1.05);
+    }
+
+    /* Responsive - stack buttons on smaller screens */
+    @media (max-width: 480px) {
+      .btn-container {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .btn-predict, .btn-download {
+        width: 100%;
+        padding: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="result-card">
+    <div class="result-title">🧠 Prediction Result</div>
+    <div class="result-detail">Uploaded File: <b>{{ filename }}</b></div>
+    <div class="result-detail">Total Samples: <b>{{ total }}</b></div>
+    <div class="result-detail">Seizure Predictions: <b>{{ seizure }}</b></div>
+    <div class="result-detail">Non-Seizure Predictions: <b>{{ non_seizure }}</b></div>
+
+    <div class="btn-container">
+      <a class="btn-download" href="{{ url_for('download') }}" download>⬇️ Download Results</a>
+      <a class="btn-predict" href="{{ url_for('index') }}">🔁 Predict Another</a>
+    </div>
+  </div>
+
+  <script>
+    particlesJS.load('particles-js', '{{ url_for("static", filename="particles.json") }}', function() {
+      console.log('🎉 particles.js loaded for result page.');
+    });
+  </script>
+</body>
+</html>
