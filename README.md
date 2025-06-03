@@ -19,12 +19,14 @@ An end-to-end deep learning project that leverages a hybrid CNN–BiLSTM archite
 
 ---
 
+<a name="about-the-project"></a>
 ## 📖 About the Project
 
 Epileptic seizures are bursts of abnormal electrical brain activity. Manual diagnosis through EEG interpretation is both time-intensive and expertise-driven. This project automates seizure detection by using a hybrid deep learning model (CNN + BiLSTM) trained on EEG data and provides a simple web interface for real-time predictions.
 
 ---
 
+<a name="dataset"></a>
 ## 📊 Dataset
 
  The research utilized the Epileptic Seizure Recognition Dataset from Kaggle:
@@ -40,12 +42,14 @@ Epileptic seizures are bursts of abnormal electrical brain activity. Manual diag
 
 ---
 
+<a name="problem-statement"></a>
 ## ❓ Problem Statement
 
 Design a hybrid deep learning model that accurately detects epileptic seizures from EEG data and deploy it via a clean web interface to assist patients and healthcare professionals.
 
 ---
 
+<a name="methodology"></a>
 ## 🔍 Methodology
 
 1. Data Cleaning & Preprocessing:
@@ -69,6 +73,7 @@ Design a hybrid deep learning model that accurately detects epileptic seizures f
 
 ---
 
+<a name="model-architecture"></a>
 ## 🧠 Model Architecture: CNN–BiLSTM
 
 * 1D Convolutional Layers: Extract spatial features from EEG sequences
@@ -82,6 +87,7 @@ Design a hybrid deep learning model that accurately detects epileptic seizures f
 
 ---
 
+<a name="website-overview"></a>
 ## 🌐 Website Overview
 
 The project includes a web-based front end built using HTML/CSS and Flask. Users can:
@@ -98,6 +104,7 @@ The project includes a web-based front end built using HTML/CSS and Flask. Users
 
 ---
 
+<a name="tech-stack"></a>
 ## 🛠️ Tech Stack
 
 | Layer         | Tools/Frameworks          |
@@ -111,6 +118,7 @@ The project includes a web-based front end built using HTML/CSS and Flask. Users
 
 ---
 
+<a name="how-to-run-the-project"></a>
 ## ⚙️ How to Run the Project
 
 1. Clone the repo:
@@ -148,6 +156,7 @@ The project includes a web-based front end built using HTML/CSS and Flask. Users
 
 ---
 
+<a name="results"></a>
 ## ✅ Results
 
 | Metric    | Score |
@@ -159,6 +168,7 @@ The project includes a web-based front end built using HTML/CSS and Flask. Users
 
 Confusion matrix, Classification report, and learning curves are available in the repo under the results section.
 
+<a name="future-enhancements"></a>
 ## 🔭 Future Enhancements
 
 * Integrate real-time EEG device stream
