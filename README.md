@@ -124,8 +124,8 @@ The project includes a web-based front end built using HTML/CSS and Flask. Users
 1. Clone the repo:
 
    ```
-   git clone https://github.com/PRIYANGA-SELVAPERUMAL/epileptic-seizure-detection.git
-   cd epileptic-seizure-detection
+   git clone https://github.com/PRIYANGA-SELVAPERUMAL/Epileptic-Seizure-Detection.git
+   cd Epileptic-Seizure-Detection
    ```
 
 2. Create and activate virtual environment:
